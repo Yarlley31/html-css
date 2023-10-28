@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem Fexível</title>
+    <style>
+        body {
+            min-width: 600px;
+            max-width: 1200px;
+            width: 75%;
+        }
+        img {
+            width: 100%;
+        }
+        body img.pequena {
+            max-width: 610px;
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Imagem Flexível</h1>
+    <p>Você esta vendo a imagem completa? Experimente aumentar o tamanhoda sua janela para aproveitar a melhor experiêcia</p>
+    <div>
+        <picture>
+            <source class="pequena" media="(max-width: 610px)" srcset="paisagem-p.png">
+            <source media="(max-width: 750px)" srcset="paisagem-m.png">
+            <img src="paisagem-g.png" alt="Mulher num monte">
+        </picture>
+    </div>
+
+</body>
+</html>
