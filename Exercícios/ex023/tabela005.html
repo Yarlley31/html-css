@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 500px;
+        }
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 0;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        .destaque {
+            background-color: yellowgreen;
+        }
+        .amarelo {
+            background-color: yellow;
+        }
+        .vermelho {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabela</h1>
+    <table>
+        <colgroup>
+            <col class="amarelo">
+            <col class="vermelho">
+            <col class="amarelo">
+            <col class="vermelho">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>José</td>
+            <td>M</td>
+            <td>35</td>
+            <td>Segurança</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>F</td>
+            <td>31</td>
+            <td>Advogada</td>
+        </tr>
+        <tr>
+            <td>Marcos Vinicius</td>
+            <td>M</td>
+            <td>30</td>
+            <td>Biologo</td>
+        </tr>
+        <tr>
+            <td>Yarlley</td>
+            <td>M</td>
+            <td>29</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Ravena</td>
+            <td>F</td>
+            <td>31</td>
+            <td>Veterinária</td>
+        </tr>
+    </table>
+</body>
+</html>
